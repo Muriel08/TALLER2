@@ -12,6 +12,7 @@ load_dotenv()
 app = Flask(__name__)
 app.config.from_object(Config)
 
+
 db.init_app(app)
 CORS(app)
 register_blueprints(app)
